@@ -1,0 +1,35 @@
+ShortLongShort
+  public static string Solution(string a, string b)
+  {
+    if(b.Count() > a.Count())
+    {
+      return String.concat(a,b,a);
+    }
+    else
+      return String.concat(b,a,b);
+  }
+}
+
+
+Count Odd Numbers below n
+using System;
+
+public static class Kata
+{
+  public static ulong OddCount(ulong n)
+  {
+    return (n/2) + ((n%2)/2);
+  }
+}
+
+What is between?
+public class Kata {
+  public static int[] Between(int a, int b) {
+    int[] c = new int[b-a+1];
+   for(int i = 0; a <= b; i++){
+     c[i] = a;
+     a++;
+   }
+    return c;
+  }
+}
