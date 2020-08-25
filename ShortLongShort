@@ -1,0 +1,11 @@
+
+  public static string Solution(string a, string b)
+  {
+    if(b.Count() > a.Count())
+    {
+      return String.concat(a,b,a);
+    }
+    else
+      return String.concat(b,a,b);
+  }
+}
