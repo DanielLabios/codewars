@@ -1,0 +1,8 @@
+  using System;
+  public static class Clock
+  {
+    public static int Past(int h, int m, int s)
+    {
+     return Convert.ToInt32((TimeSpan.FromHours(h) + TimeSpan.FromMinutes(m) + TimeSpan.FromSeconds(s)).TotalMilliseconds);
+    }
+  }
