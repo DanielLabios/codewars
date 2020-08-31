@@ -1,0 +1,10 @@
+using System;
+
+public class Kata
+  
+{
+    public static bool Feast(string beast, string dish)
+    {
+        return beast.Substring(0,1) == dish.Substring(0,1) && beast.Substring(beast.Length - 1,1) == dish.Substring(dish.Length - 1,1) ? true : false;
+    }
+}
