@@ -1,0 +1,24 @@
+public class Kata
+{
+  public static string Well(string[] x)
+  {
+    int goodIdeas = 0;
+    foreach(string idea in x)
+      {
+        if(idea == "good")
+        {
+          goodIdeas++;
+        }
+      }
+    if(goodIdeas <= 0)
+    {
+      return "Fail!";
+    }
+    else if(goodIdeas <=2)
+    {
+      return "Publish!";
+    }
+    else
+      return "I smell a series!";
+  }
+}
