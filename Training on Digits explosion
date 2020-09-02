@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+public class Digits
+{
+  public static string Explode(string s)
+  {
+
+            string r = "";
+            var n = new List<string>();
+            var ss = s.ToCharArray();
+            foreach (char sss in ss)
+            {
+                n.Add(sss.ToString());
+            }
+            foreach (string nn in n)
+            {
+                for (var l = 1; l <= int.Parse(nn); l++)
+                {
+                    r = r + nn;
+                }
+            }
+    return r;
+  }
+}
