@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace CodeWars
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string r = "";
+            var n = new List<string>();
+            var ss = s.ToCharArray();
+            foreach (char sss in ss)
+            {
+                n.Add(sss.ToString());
+            }
+            for (var l = 0; 0 < (n.Count() - l); l++)
+            {
+                for (var ll = 0; ll <= l; ll++)
+                {
+                    string p = (ll == 0) ? n[l].ToUpper() : n[l].ToLower();
+                    r += p;
+                }
+                r = r + (l == n.Count() - 1 ? "" : "-");
+            }
+            Console.WriteLine(r);
+        }
+    }
+}
