@@ -1,0 +1,8 @@
+using System.Linq;
+public class Kata
+{
+  public static string Correct(string text)
+  {
+    return string.Join("", text.Select(character => (character == '5' ? 'S' : (character == '0' ? 'O' : (character == '1' ? 'I' : character)))));
+  }
+}
