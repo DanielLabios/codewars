@@ -1,0 +1,12 @@
+using System;
+using System.Linq;
+
+public class Kata
+{
+  public static long SuperSize(long num)
+  {
+  string numb = num.ToString();
+  numb = string.Join("", numb.OrderByDescending(n => Int32.Parse(n.ToString())));
+  return num = Int64.Parse(numb);
+  }
+}
