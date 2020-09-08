@@ -6,6 +6,6 @@ public static class Kata
     string sYear = year.ToString();
 
     return Int32.Parse(sYear.Remove((sYear.Length - 2))) + 
-    ((sYear[sYear.Length - 2].ToString() == "0" && sYear[sYear.Length - 1].ToString() == "0") ? 0 : 1);
+    ((sYear[sYear.Length - 2] == '0' && sYear[sYear.Length - 1] == '0') ? 0 : 1);
   }
 }
