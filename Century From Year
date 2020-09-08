@@ -1,0 +1,11 @@
+using System;
+public static class Kata
+{
+  public static int СenturyFromYear(int year)
+  {
+    string sYear = year.ToString();
+
+    return Int32.Parse(sYear.Remove((sYear.Length - 2))) + 
+    ((sYear[sYear.Length - 2].ToString() == "0" && sYear[sYear.Length - 1].ToString() == "0") ? 0 : 1);
+  }
+}
