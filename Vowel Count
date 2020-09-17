@@ -1,0 +1,8 @@
+function getCount(str) {
+  var vowelsCount = 0;
+  
+let characters = str.split('')
+let check = ['a','e','i','o','u']
+vowelsCount = characters.filter(letter => check.includes(letter)).length
+return vowelsCount;
+}
