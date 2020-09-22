@@ -1,0 +1,8 @@
+function pairs(ar){
+const howLong = ar.length
+let pairs = 0
+for (let index = 0; index < howLong; index += 2){
+  if (Math.abs(ar[index] - ar[index+1]) === 1){
+  pairs += 1}}
+  return pairs
+};
